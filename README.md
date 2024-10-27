@@ -44,11 +44,11 @@ etc.
 ## Project Steps
 
 ### Data Preprocessing:
-* Missing values were imputed, and categorical variables were encoded.
+* One-hot encoding for categorical variables.
 * Numerical variables were standardized to improve model convergence.
 ### Model Selection and Training:
 * XGBoost, Random Forest, and Logistic Regression were selected for model comparison, chosen based on their applicability to classification tasks and ability to handle feature interactions.
-* Each model was evaluated using Stratified K-Folds cross-validation to ensure consistency across classes.
+* Each model was evaluated using Stratified K-Fold cross-validation to ensure consistency across classes.
 ### Evaluation Metrics:
 * ROC AUC was the primary evaluation metric, selected for its sensitivity to class imbalance.
 * Performance was tracked across training and cross-validation sets, highlighting the strengths of each model.
